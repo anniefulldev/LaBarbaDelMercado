@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&family=Kreon&display=swap');
+*{
+    padding:0;
+    margin:0;
+    font-size:62.5%;
+}
+body{
+    background-color: black;
+}
+ul li{
+    list-style-type: none;
+    font-family: 'gentium book basic';
+    text-align: center;
+    font-size: 3rem;
+    font-style: oblique;
+    display: inline-block;
+    margin:0.1rem 0.2rem;
+}
+.titulo{
+    color: #efb810;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'gentium book basic';
+    font-style: italic;
+    padding: 0.1rem;
+    border:0.1rem;
+}
+.navMenu{
+    background-color: #0d076a;
+    padding:0.2rem;
+    margin: 0.1rem;
+    border:0.1rem;
+}
+header{
+    padding:0.1rem;
+    margin:0.1rem;
+    border:0.1rem;
+    grid-area: header;
+}
+a{
+    text-decoration: none;
+    color: #efb810;
+    text-align: center;
+    font-family: 'gention book basic';
+    font-size: 3rem;
+}
+aside{
+    padding: 0.5rem;
+    margin: 2rem;
+    border: 0.1rem;
+    border-radius: 0.2rem;
+    border-color: #0d076a;
+    grid-area: aside;
+    align-self: start;
+}
+.sobreMi{
+    padding: 0.1rem;
+    margin: 0.1rem;
+    border: 0.2rem;
+    height: 5rem
+}
+.menuFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100rem;
+    margin-top: 10rem;
+}
+.walter{
+    width: 30rem;
+    height: 30rem;
+    border: 0.3rem;
+    border-style: double;
+    border-color: #efb810;
+    margin-top:10rem;
+    margin-left: 10rem;
+}
+.about{                 
+    font-family: 'kreon';
+    font-size: 2.1rem;
+    color: #efb810;
+    font-style: italic;
+    text-align: center;
+}
+img{
+    width:26;
+    height: 22rem;
+    padding: 0.1rem;
+    margin: 0.1rem;
+    border: 0.1rem;
+    transition: height 1s, width 1s;
+}
+img:hover{
+    width: 32;
+    height:28rem;
+}
+.box1,
+.box2,
+.box3,
+.box4,
+.about,
+.portales{    /*reciclo mismas medidas en varias clases*/
+    margin: 0.2rem;
+    padding: 0.2rem;
+    border:0.3rem;
+}
+.perspectiva{    /*se recicla en varias secciones*/
+    font-family: 'kreon';
+    color: #efb810;
+    background-color: #090635;
+    font-size: 4.5rem;
+    text-align: center;
+}
+.mercadoFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin: 0.4rem;
+    padding: 0.4rem;
+    border: 0.4rem;
+
+}
+footer{
+    background-color: #0d076a;
+    text-align: center;
+    margin: 0.1rem;
+    padding: 0.1rem;
+    border: 0.1rem;
+    grid-area: footer;
+}
+.tituloPequeño{
+    font-family: 'gentium book basic';
+    font-size: 6rem;
+    color: #efb810;
+    text-align: center;
+    margin: 0.2rem;
+    padding: 0.1rem;
+    border:0.2rem;
+}
+.tituloMediano{     /*reciclo en todas las paginas solo cambio el titulo*/
+    font-family: 'gentium book basic';
+    font-size: 8rem;
+    color: #efb810;
+    font-style: italic;
+    text-align: center;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    border:0.2rem;
+    background-color: #0d076a;
+}
+.socialLinks{
+    text-align: center;
+    font-family: 'kreon';
+    font-style: oblique;
+    text-decoration: none;
+    font-size: 3rem;
+}
+.copyright{
+    font-family: 'kreon';
+    font-size: 2rem;
+    text-align: right;
+    color: #efb810;
+}
+.portales{
+    text-align: center;
+    margin: 1rem;
+    padding: 0.2rem;
+}
+.YtRecomendado{
+    display: flex;
+}
+label{
+    font-size: 3.5rem;
+}
+.formulario{
+    font-family: 'kreon';
+    font-size: 10rem;
+    color: #efb810;
+    text-align: center;
+    padding: 0.2rem;
+    margin:0.2rem;
+    border:0.2rem;
+}
+.canalesRecomendados{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0.1rem;
+    padding: 0.1rem;
+    border: 0.2rem;
+}
+main{
+    grid-area: main;
+}
+.grilla1{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    "footer footer";
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 10% 80% 10%;
+}
+@media (max-width:480px) {
+    body{
+        background-color: #090635;
+    }
+    aside, .sobreMi{
+        display: none;
+    }
+    .grilla1{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 80% 10%;
+        justify-items: stretch;
+    }
+    .titulo{
+        color: #efb810;
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'gentium book basic';
+        font-style: italic;
+        padding: 0.1rem;
+        border:0.1rem;
+    }
+    .mercadoFlex{
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+    }
+    .canalesRecomendados{
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+    }
+}
+@media (max-width:1023px) {
+    body{
+        background-color: #090635;
+    }
+    aside, .sobreMi{
+        display: none;
+    }
+    .grilla1{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 80% 10%;
+        justify-items: stretch;
+    }
+    .titulo{
+        color: #efb810;
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'gentium book basic';
+        font-style: italic;
+        padding: 0.1rem;
+        border:0.1rem;
+    }
+    .canalesRecomendados{
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+    }
+}
