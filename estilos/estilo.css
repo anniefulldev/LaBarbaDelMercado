@@ -14,7 +14,7 @@ ul li{
     font-size: 3rem;
     font-style: oblique;
     display: inline-block;
-    margin:0.1rem 0.2rem;
+    margin: 1.5rem;
 }
 .titulo{
     color: #efb810;
@@ -25,11 +25,12 @@ ul li{
     padding: 0.1rem;
     border:0.1rem;
 }
-.navMenu{
+.container-fluid{
     background-color: #0d076a;
-    padding:0.2rem;
-    margin: 0.1rem;
-    border:0.1rem;
+}
+.navbar-brand{
+    font-family: 'gentium book basic';
+    font-size: 3rem;
 }
 header{
     padding:0.1rem;
@@ -55,7 +56,7 @@ aside{
 }
 .sobreMi{
     padding: 0.1rem;
-    margin: 0.1rem;
+    margin: 2rem 1rem 3rem 6rem;
     border: 0.2rem;
     height: 5rem
 }
@@ -72,8 +73,8 @@ aside{
     border: 0.3rem;
     border-style: double;
     border-color: #efb810;
-    margin-top:10rem;
-    margin-left: 10rem;
+    padding: 1rem;
+    margin: 10rem 1rem 3rem 14rem;
 }
 .about{                 
     font-family: 'kreon';
@@ -94,10 +95,7 @@ img:hover{
     width: 32;
     height:28rem;
 }
-.box1,
-.box2,
-.box3,
-.box4,
+.box,
 .about,
 .portales{    /*reciclo mismas medidas en varias clases*/
     margin: 0.2rem;
@@ -199,8 +197,9 @@ main{
     "header header"
     "aside main"
     "footer footer";
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 45% 55%;
     grid-template-rows: 10% 80% 10%;
+    justify-content: space-around;
 }
 @media (max-width:480px) {
     body{
