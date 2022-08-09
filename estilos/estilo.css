@@ -128,8 +128,8 @@ footer{
 }
 .tituloPequeño{
     font-family: 'gentium book basic';
-    font-size: 6rem;
-    color: #efb810;
+    font-size: 4rem;
+    color: whitesmoke;
     text-align: center;
     margin: 0.2rem;
     padding: 0.1rem;
@@ -137,8 +137,8 @@ footer{
 }
 .tituloMediano{     /*reciclo en todas las paginas solo cambio el titulo*/
     font-family: 'gentium book basic';
-    font-size: 8rem;
-    color: #efb810;
+    font-size: 6rem;
+    color: whitesmoke;
     font-style: italic;
     text-align: center;
     padding: 0.2rem;
