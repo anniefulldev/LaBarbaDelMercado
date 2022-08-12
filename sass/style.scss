@@ -1,35 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&family=Kreon&display=swap');
-*{
-    padding:0;
-    margin:0;
-    font-size:62.5%;
-}
-body{
-    background-color: black;
-}
+@import "fuentes";
+@import "variableGlobal";
+@import "generales";
+@import "titulos";
+@import "images";
 ul li{
     list-style-type: none;
-    font-family: 'gentium book basic';
+    font-family: $gention;
     text-align: center;
     font-size: 3rem;
     font-style: oblique;
     display: inline-block;
     margin: 1.5rem;
 }
-.titulo{
-    color: #efb810;
-    text-align: center;
-    font-size: 4rem;
-    font-family: 'gentium book basic';
-    font-style: italic;
-    padding: 0.1rem;
-    border:0.1rem;
-}
+
 .container-fluid{
     background-color: #0d076a;
 }
 .navbar-brand{
-    font-family: 'gentium book basic';
+    font-family: $gention;
     font-size: 3rem;
 }
 header{
@@ -42,7 +30,7 @@ a{
     text-decoration: none;
     color: #efb810;
     text-align: center;
-    font-family: 'gention book basic';
+    font-family: $gention;
     font-size: 3rem;
 }
 aside{
@@ -83,18 +71,7 @@ aside{
     font-style: italic;
     text-align: center;
 }
-img{
-    width:26;
-    height: 22rem;
-    padding: 0.1rem;
-    margin: 0.1rem;
-    border: 0.1rem;
-    transition: height 1s, width 1s;
-}
-img:hover{
-    width: 32;
-    height:28rem;
-}
+
 .box,
 .about,
 .portales{    /*reciclo mismas medidas en varias clases*/
@@ -126,26 +103,7 @@ footer{
     border: 0.1rem;
     grid-area: footer;
 }
-.tituloPequeño{
-    font-family: 'gentium book basic';
-    font-size: 4rem;
-    color: whitesmoke;
-    text-align: center;
-    margin: 0.2rem;
-    padding: 0.1rem;
-    border:0.2rem;
-}
-.tituloMediano{     /*reciclo en todas las paginas solo cambio el titulo*/
-    font-family: 'gentium book basic';
-    font-size: 6rem;
-    color: whitesmoke;
-    font-style: italic;
-    text-align: center;
-    padding: 0.2rem;
-    margin: 0.2rem;
-    border:0.2rem;
-    background-color: #0d076a;
-}
+
 .socialLinks{
     text-align: center;
     font-family: 'kreon';
@@ -223,7 +181,7 @@ main{
         color: #efb810;
         text-align: center;
         font-size: 3rem;
-        font-family: 'gentium book basic';
+        font-family: $gention;
         font-style: italic;
         padding: 0.1rem;
         border:0.1rem;
@@ -261,7 +219,7 @@ main{
         color: #efb810;
         text-align: center;
         font-size: 3rem;
-        font-family: 'gentium book basic';
+        font-family: $gention;
         font-style: italic;
         padding: 0.1rem;
         border:0.1rem;
