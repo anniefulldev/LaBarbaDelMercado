@@ -1,0 +1,24 @@
+$redes: (
+    twitter:#1DA1F2,
+    facebook:#1877f2,
+    instagram:#D43089,   
+    );
+@each $red, $color in $redes{
+    .fa-#{$red}{
+        background-color: $color;
+    }
+}
+
+/*usé la función extend en el archivo titulos*/
+
+/* entendí esta funcion pero no la utilizo por eso la pongo en comentarios
+
+@mixin sizes($width, $height){
+    height:$height;
+    width:$width;
+}
+.my_mixin{
+    @include sizes (3rem, 3rem);
+    background-color: goldenrod;
+}
+*/

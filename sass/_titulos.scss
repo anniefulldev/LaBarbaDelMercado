@@ -1,20 +1,21 @@
+.paraTitulos{
+    font-size: 4rem;
+    font-family: 'gentium book basic';
+    padding: 0.2rem;
+    border: 0.2rem;
+}
+
 .titulo{
+    @extend .paraTitulos;
     color: #efb810;
     text-align: center;
-    font-size: 4rem;
-    font-family: 'gentium book basic';
     font-style: italic;
-    padding: 0.1rem;
-    border:0.1rem;
 }
 .tituloPequeño{
-    font-family: 'gentium book basic';
-    font-size: 4rem;
+    @extend .paraTitulos;
     color: whitesmoke;
     text-align: center;
     margin: 0.2rem;
-    padding: 0.1rem;
-    border:0.2rem;
 }
 .tituloMediano{     /*reciclo en todas las paginas solo cambio el titulo*/
     font-family: 'gentium book basic';

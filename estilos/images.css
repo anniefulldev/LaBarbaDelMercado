@@ -1,0 +1,12 @@
+img {
+  width: 26;
+  height: 22rem;
+  padding: 0.1rem;
+  margin: 0.1rem;
+  border: 0.1rem;
+  transition: height 1s, width 1s;
+}
+img img:hover {
+  width: 32;
+  height: 28rem;
+}/*# sourceMappingURL=images.css.map */
