@@ -12,6 +12,18 @@
   background-color: #D43089;
 }
 
+/*usé la función extend en el archivo titulos*/
+/* entendí esta funcion pero no la utilizo por eso la pongo en comentarios
+
+@mixin sizes($width, $height){
+    height:$height;
+    width:$width;
+}
+.my_mixin{
+    @include sizes (3rem, 3rem);
+    background-color: goldenrod;
+}
+*/
 * {
   padding: 0;
   margin: 0;
