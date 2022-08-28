@@ -33,7 +33,7 @@ a{
     text-align: center;
     font-family: $gention;
     font-size: 3rem;
-    margin: 1rem;
+    margin: 2rem;
 }
 aside{
     padding: 0.5rem;
@@ -64,7 +64,7 @@ aside{
     border-style: double;
     border-color: #efb810;
     padding: 1rem;
-    margin: 10rem 1rem 3rem 14rem;
+    margin: 7rem 1rem 3rem 14rem;
 }
 .about{                 
     font-family: 'kreon';
@@ -73,7 +73,6 @@ aside{
     font-style: italic;
     text-align: center;
 }
-
 .box,
 .about,
 .portales{    /*reciclo mismas medidas en varias clases*/
@@ -92,6 +91,7 @@ aside{
     display: flex;
     flex-direction: row;
     justify-content:space-around;
+    flex-wrap: wrap;
     margin: 0.4rem;
     padding: 0.4rem;
     border: 0.4rem;
@@ -176,7 +176,6 @@ main{
         "footer"
         ;
         grid-template-columns: 100%;
-        grid-template-rows: 20% 80% 10%;
         justify-items: stretch;
     }
     .titulo{
@@ -192,6 +191,7 @@ main{
         display: flex;
         flex-direction: column;
         flex-flow: column;
+        flex-wrap: wrap;
     }
     .canalesRecomendados{
         display: flex;
